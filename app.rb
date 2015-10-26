@@ -31,7 +31,7 @@ end
 
 post '/chargeandroid' do
   # Amount in cents
-  @amount = 8000
+  @amount = 9000
 
   customer = Stripe::Customer.create(
     :email => 'customer@example.com',
@@ -97,14 +97,14 @@ __END__
         <form action="/chargeandroid" method="post" class="payment">
           <article>
             <label class="amount">
-              <span>Android: £80.00</span>
+              <span>Android: £90.00</span>
             </label>
           </article>
 
           <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                   data-key="<%= settings.publishable_key %>"
                   data-description="Android course"
-                  data-amount="8000"
+                  data-amount="9000"
                   data-currency="gbp"
                   data-locale="auto"></script>
         </form>
@@ -117,7 +117,7 @@ __END__
 
 @@ chargeandroid
   <div class="col-md-6 col-md-offset-3">
-    <h2>Thanks, you paid <strong>£80.00</strong>!</h2>
+    <h2>Thanks, you paid <strong>£90.00</strong>!</h2>
   </div>
 
 @@ chargefrontend
