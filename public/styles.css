@@ -8,3 +8,19 @@ img {
   margin-right: auto;
   padding-bottom: 20px;
 }
+
+.row ul {
+  list-style-type: none;
+  padding: 0 0 0 0;
+}
+
+.row{
+  text-align: center;
+}
+.row li {
+  padding-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+}
