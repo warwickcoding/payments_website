@@ -94,12 +94,17 @@ __END__
   </div>
 
 @@ payment_android_regular
+  <div class='row'>
+    <div class="col-md-6 col-md-offset-3">
+      <img src="logo_two_layers.png" alt="Warwick coding logo" />
+   </div>
+  </div>
   <div class="row">
     <div class="col-md-2 col-md-offset-5">
       <form action="/chargeandroid" method="post" class="payment">
         <article>
           <label class="amount">
-            <span>Android: £60.00</span>
+            <span>You will be charged £60.00 for the Android course</span>
           </label>
         </article>
 
@@ -113,14 +118,20 @@ __END__
     </div>
   </div>
 
+
 @@ payment_frontend
+  <div class='row'>
+    <div class="col-md-6 col-md-offset-3">
+      <img src="logo_two_layers.png" alt="Warwick coding logo" />
+   </div>
+  </div>
   <div class="row">
     <div class="col-md-2 col-md-offset-5">
 
       <form action="/chargefrontend" method="post" class="payment">
         <article>
           <label class="amount">
-            <span>Front-end: £50.00</span>
+            <span>You will be charged £50.00 for the Front-end course:</span>
           </label>
         </article>
 
@@ -136,25 +147,51 @@ __END__
   </div>
 
 @@ chargeandroid
-  <div class="container">
-    <div class='row'>
-      <div class="col-md-6 col-md-offset-3">
-        <img src="logo_two_layers.png" alt="Warwick coding logo" />
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=873794626038123";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2>Thanks, you paid <strong>£60.00</strong>!</h2>
+          <p>Check your email inbox for the invoice</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="fb-page" data-href="https://www.facebook.com/WarwickCoding" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/WarwickCoding"><a href="https://www.facebook.com/WarwickCoding">WarwickCoding</a></blockquote></div></div>
+        </div>
       </div>
     </div>
-    <div class="col-md-6 col-md-offset-3">
-      <h2>Thanks, you paid <strong>£60.00</strong>!</h2>
-    </div>
-  </div>
+  </body>
 
 @@ chargefrontend
-  <div class="container">
-    <div class='row'>
-      <div class="col-md-6 col-md-offset-3">
-        <img src="logo_two_layers.png" alt="Warwick coding logo" />
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=873794626038123";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2>Thanks, you paid <strong>£50.00</strong>!</h2>
+          <p>Check your email inbox for the invoice</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="fb-page" data-href="https://www.facebook.com/WarwickCoding" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/WarwickCoding"><a href="https://www.facebook.com/WarwickCoding">WarwickCoding</a></blockquote></div></div>
+        </div>
       </div>
     </div>
-    <div class="col-md-6 col-md-offset-3">
-      <h2>Thanks, you paid <strong>£50.00</strong>!</h2>
-    </div>
-  </div>
+  </body>
