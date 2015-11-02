@@ -21,7 +21,7 @@ end
 
 post '/charge_frontend' do
   # Amount in cents
-  @amount = 100
+  @amount = 5000
 
   customer = Stripe::Customer.create(
     :email => params[:stripeEmail],
