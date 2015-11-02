@@ -21,10 +21,10 @@ end
 
 post '/chargefrontend' do
   # Amount in cents
-  @amount = 500
+  @amount = 100
 
   customer = Stripe::Customer.create(
-    :email => 'customer@example.com',
+    :email => 'zlahham@hotmail.com',
     :card  => params[:stripeToken]
   )
 
@@ -33,7 +33,7 @@ post '/chargefrontend' do
     :description => 'Frontend Charge',
     :currency    => 'gbp',
     :customer    => customer.id,
-    :receipt_email => @stripeEmail
+    :receipt_email => customer.email
   )
 
   erb :chargefrontend
@@ -139,7 +139,7 @@ __END__
         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                 data-key="<%= settings.publishable_key %>"
                 data-description="Frontend course"
-                data-amount="500"
+                data-amount="100"
                 data-currency="gbp"
                 data-locale="auto"></script>
       </form>
