@@ -1,0 +1,23 @@
+<div class='row'>
+  <div class="col-md-6 col-md-offset-3">
+    <img src="logo_two_layers.png" alt="Warwick coding logo" />
+ </div>
+</div>
+<div class="row">
+  <div class="col-md-2 col-md-offset-5">
+    <form action="/charge_android" method="post" class="payment">
+      <article>
+        <label class="amount">
+          <span>You will be charged £60.00 for the Android course</span>
+        </label>
+      </article>
+
+      <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="<%= settings.publishable_key %>"
+              data-description="Android course"
+              data-amount="6000"
+              data-currency="gbp"
+              data-locale="auto"></script>
+    </form>
+  </div>
+</div>

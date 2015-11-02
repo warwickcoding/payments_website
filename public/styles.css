@@ -1,7 +1,3 @@
-/*body {
-  padding-top: 50px;
-}*/
-
 img {
   display: block;
   margin-left: auto;
@@ -29,4 +25,9 @@ h2 {
   padding-left: auto;
   padding-right: auto;
   padding-top: 50px;
+}
+
+#logo {
+  padding-top: 50px;
+  width: 500px;
 }
