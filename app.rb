@@ -24,7 +24,7 @@ post '/chargefrontend' do
   @amount = 100
 
   customer = Stripe::Customer.create(
-    :email => 'zlahham@hotmail.com',
+    :email => params[:stripeEmail],
     :card  => params[:stripeToken]
   )
 
