@@ -21,7 +21,7 @@ end
 
 post '/chargefrontend' do
   # Amount in cents
-  @amount = 500
+  @amount = 5000
 
   customer = Stripe::Customer.create(
     :email => 'customer@example.com',
@@ -138,7 +138,7 @@ __END__
         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                 data-key="<%= settings.publishable_key %>"
                 data-description="Frontend course"
-                data-amount="500"
+                data-amount="5000"
                 data-currency="gbp"
                 data-locale="auto"></script>
       </form>
