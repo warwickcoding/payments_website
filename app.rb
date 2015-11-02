@@ -32,8 +32,7 @@ post '/chargefrontend' do
     :amount      => @amount,
     :description => 'Frontend Charge',
     :currency    => 'gbp',
-    :customer    => customer.id,
-    :receipt_email => customer.email
+    :customer    => customer.id
   )
 
   erb :chargefrontend
