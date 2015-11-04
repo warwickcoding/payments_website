@@ -20,7 +20,6 @@ get '/payment_android' do
 end
 
 post '/charge_frontend' do
-  # Amount in cents
   @amount = 5000
 
   customer = Stripe::Customer.create(
@@ -40,11 +39,10 @@ post '/charge_frontend' do
 end
 
 post '/charge_android' do
-  # Amount in cents
   @amount = 6000
 
   customer = Stripe::Customer.create(
-    :email => 'customer@example.com',
+    :email => params[:stripeEmail],
     :card  => params[:stripeToken]
   )
 
@@ -52,7 +50,8 @@ post '/charge_android' do
     :amount      => @amount,
     :description => 'Android Charge',
     :currency    => 'gbp',
-    :customer    => customer.id
+    :customer    => customer.id,
+    :receipt_email => customer.email
   )
 
   erb :charge_android
