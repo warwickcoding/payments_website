@@ -26,6 +26,10 @@ h2 {
   height: 30px;
 }
 
+.stripe-button-el {
+  margin-top: 25px;
+}
+
 #logo {
   padding-top: 50px;
   width: 500px;
