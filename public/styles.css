@@ -23,7 +23,13 @@ h2 {
   padding-top: 50px;
 }
 .brand-logo img {
-  height: 30px;
+  width: 3em;
+  margin-left: 1.5em;
+  background-color: white;
+
+}
+nav {
+  background-color: #BA1118 !important;
 }
 
 .stripe-button-el {
