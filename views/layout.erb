@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="shortcut icon" href="brackets.ico">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
-    <meta charset="utf-8">
-    <title>WarwickCoding Payments</title>
-  </head>
-  <body>
-    <nav>
-      <div class="nav-wrapper">
-        <div class="brand-logo">
-          <img src="logo_banner.png" alt="Nav bar WarwickCoding logo" />
+
+<head>
+  <meta charset="utf-8">
+  <title>WarwickCoding Payments</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="warwickCoding">
+  <meta name="author" content="Zaid Al Lahham">
+  <link rel="shortcut icon" href="brackets.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-spy="scroll">
+  <header id="header" class="header">
+    <div class="container">
+      <h1 class="logo pull-left">
+        <a class="scrollto" href="#promo">
+          <span class="logo-title">warwickCoding</span>
+        </a>
+      </h1>
+      <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="http://www.warwickcoding.com">WarwickCoding</a></li>
-          <li><a href="https://www.facebook.com/WarwickCoding">Facebook</a></li>
-        </ul>
-      </div>
-    </nav>
-    <%= yield %>
-  </body>
+        <div class="navbar-collapse collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
+            <li class="nav-item"><a class="scrollto" href="#about">About</a></li>
+            <li class="nav-item"><a class="scrollto" href="#courses">Courses</a></li>
+            <li class="nav-item"><a class="scrollto" href="#team">Team</a></li>
+            <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <br>
+  <%= yield %>
+
+
+
+
+
+</body>
+
 </html>
